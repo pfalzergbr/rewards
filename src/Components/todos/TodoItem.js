@@ -13,8 +13,8 @@ import { coinMap } from '../../Utils/coinMap';
 import { getToastMessage } from '../../Utils/toastMessages';
 
 const TodoItem = (props) => {
-    const { id, todoText, isCompleted, importance } = props;
-    const [dispatchTodos, dispatchCoins] = useContext(
+    const { id, todoText, isCompleted, editItem, importance } = props;
+    const [dispatchTodos, dispatchRewards, dispatchCoins] = useContext(
         DispatchContext,
     );
     const [isEditing, setIsEditing] = useToggle(false);

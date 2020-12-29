@@ -14,7 +14,7 @@ import { CoinsContext, DispatchContext } from '../../Context/todosContext';
 
 const RewardItem = (props) => {
     const { id, rewardText, rewardValue } = props;
-    const [ dispatchRewards, dispatchCoins] = useContext(
+    const [dispatchTodos, dispatchRewards, dispatchCoins] = useContext(
         DispatchContext,
     );
     const [isEditing, setIsEditing] = useToggle(false);
