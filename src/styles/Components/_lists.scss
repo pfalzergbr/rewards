@@ -1,0 +1,97 @@
+.list-item {
+    
+    &__container {
+        justify-content: space-between;
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    &__wrapper {
+        color: #fff;
+        margin-bottom: 0.5em;
+        padding: 0.75em 0;
+        transition: all .2s ease-out;
+        vertical-align: center;
+
+        &--completed {
+            background-color: $color-blue-dark;
+        }
+
+        &--claiming {
+            background-color: $color-green-dark;
+        }
+
+        &--todo {
+            background-color: lighten($color-blue-dark, 5%);
+            
+            &:hover,
+            &:focus{
+                background-color: $color-blue-light;
+    
+                @media (min-width: 600px) {
+                    transform: scale(1.02);
+                
+                } 
+            }
+        }
+
+        &--reward {
+            background-color: $color-green-light;
+        
+            @media (min-width: 600px) {
+                &:hover,
+                &:focus {
+                    transform: scale(1.02);
+                }
+            }
+                &:hover,
+                &:focus{
+                    background-color: lighten($color-green-dark, 5%);
+            }
+        }
+    }
+    
+    &__button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 4em;
+        height: 1.5em;
+    }
+    
+    &__button-container--edit {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: flex-end;
+        width: 100%;
+        & > button:not(:last-child) {
+            margin-right: 1em;
+        }
+    }
+    
+    &__item {
+        cursor: pointer;
+        width: 100%;
+        color: $color-white;
+
+        &--completed {
+            text-decoration: line-through;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        padding: 0 1em;
+    
+        &:hover,
+        &:focus {
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 15px;
+        }
+    }
+    
+}
+
+

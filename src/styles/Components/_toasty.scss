@@ -1,0 +1,12 @@
+
+.Toastify__toast-container {
+    text-align: center;
+}
+
+.Toastify__toast--success {
+    background-color: lighten($color-green-light, 5%);
+}
+
+.Toastify__toast--info {
+    background-color: lighten($color-blue-light, 5%);
+}

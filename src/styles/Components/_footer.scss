@@ -1,0 +1,21 @@
+.footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    &__paragraph {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        font-size: $font-size-medium;
+        color: $color-white;
+
+        &--copyright {
+            margin-top: 1.5em;
+            font-size: $font-size-small;
+        }
+    }
+
+}

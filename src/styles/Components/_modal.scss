@@ -1,0 +1,101 @@
+.modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    
+
+    &__content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 80rem;
+        width: 80%;
+        z-index: 200;
+        top: 33%;
+        left: 50%;
+        background-color: $color-white;
+        transform: translate(-50%, -25%);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 20px 20px 40px rgba(0, 0, 0, .4);
+        
+    }
+
+    &__header {
+        padding: 2.5rem 5rem 2rem; 
+        
+        &--reward {
+            background-color: $color-green-light;
+        }
+        &--todo {
+            background-color: $color-blue-light;
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-weight: 300;
+        margin-bottom: 2rem;
+
+        @media(min-width: 600px) {
+            font-size: $font-size-normal;
+        }
+    }
+
+    &__paragraph {
+        font-size: $font-size-medium;
+        font-style: italic;
+        
+        @media(min-width: 600px) {
+            font-size: $font-size-normal;
+        }
+    }
+
+    &__list {
+        padding: 2.5rem 5rem 2.5rem;
+        list-style-position: inside;
+
+        &-item {
+            margin-bottom: 1rem;
+            font-size: $font-size-medium;
+        
+            @media(min-width: 600px) {
+                font-size: $font-size-normal;
+            }
+        
+        }
+    }
+
+    &__button-container {
+        padding: 0 5rem 2.5rem;
+
+    }
+
+    &__btn {
+        margin: 0 auto;
+        border-radius: 10px;
+        
+        &--reward {
+            background-color: $color-green-dark;
+
+            &:hover, 
+            &:focus {
+                background-color: $color-green-light; 
+            }
+        }
+        
+        &--todo {
+            background-color: $color-blue-dark;
+    
+            &:hover, 
+            &:focus {
+                background-color: $color-blue-light; 
+            }
+        }
+    }
+}

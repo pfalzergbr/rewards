@@ -1,0 +1,124 @@
+input {
+    border: none;
+    outline: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 2em;
+
+    &__label {
+        color: #ecf0f1;
+        padding: 0.5em;
+    }
+
+    &__input {
+        padding: .5em 1em;
+        color: #ecf0f1;
+        text-align: center;
+        width: 80%;
+        flex: 1;
+
+        @media (min-width: 600px) {
+            flex: 1;
+            margin-right: 2rem;
+            text-align: left;
+        }
+
+        &::placeholder {
+            color: ($color-white);
+            opacity: .7;
+        }
+    }
+
+
+    &__input:focus {
+        border: 1px solid #ecf0f1;
+    }
+
+}
+
+.rewards-form {
+    background-color: $color-green-light;
+}
+
+.todo-form {
+    background-color: $color-blue-light;
+    
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    // flex: 1;
+    margin-bottom: 1em;
+
+    @media (min-width: 600px){
+        margin-bottom: 0;
+    }
+}
+
+
+.edit-form {
+    width: 80%;
+    margin: 0 auto 0.5em;
+
+}
+
+
+.stepper {
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #ecf0f1;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+    padding: 0 .2rem;
+    margin-right: 1em;
+    // margin-bottom: 2rem;
+    
+    & > i {
+        display: inline-block;
+        font-size: $font-size-small;
+        color: $color-white;
+        padding: .5em;
+    }
+    
+    &__value {
+        color: $color-white;
+        align-self: center;
+    }
+    &--importance {
+        
+        &:hover,
+        &:focus {
+            background-color: $color-blue-light;
+        }    
+    }
+
+    &--coin-value {
+        &:hover,
+        &:focus {
+            background-color: $color-green-light;
+        }  
+    }
+    @media (min-width: 600px) {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    
+    }
+
+}

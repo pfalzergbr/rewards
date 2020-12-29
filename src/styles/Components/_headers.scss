@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    padding-bottom: 1.5rem; 
+    border-bottom: 1px solid $color-white;
+    width: 80%;
+    margin: 2.5rem auto 3rem;
+
+    &__title {
+        font-size: $font-size-large;
+    }
+
+    &__link {
+        font-size: $font-size-normal;
+        color: $color-white;
+        font-weight: 400;
+        text-decoration: none;
+        transition: all .1s ease;
+        display: inline-block;
+        cursor: pointer; 
+    }
+
+}
+.coin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.coin-number {
+    margin-left: 1rem;
+    font-size: $font-size-large;
+}

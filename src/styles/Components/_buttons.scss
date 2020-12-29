@@ -1,0 +1,52 @@
+button {
+    border: none;
+    background-color: inherit;
+    color: #ecf0f1;
+    outline: none;
+}
+
+.btn-primary {
+    border: 1px solid #ecf0f1;
+    display: flex;
+    padding: 0.5em 1.25em;
+    text-transform: uppercase;
+    transition: all .1s ease-in;
+    align-self: center;
+    cursor: pointer;
+
+    & > i {
+        display: inline-block;
+    }
+
+    &__text {
+        margin-left: 0.5em;
+        display: none;
+
+        @media (min-width: 600px){
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: 600px) {
+        margin-top: 0;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+.btn--todo-form {
+    // margin-top: 1rem;
+
+    &:hover, 
+    &:focus {
+        background-color: $color-blue-light; 
+    }
+}
+.btn--rewards-form {
+    &:hover, 
+    &:focus {
+        background-color: lighten($color-green-light, 5%); 
+    }
+}
