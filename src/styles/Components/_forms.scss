@@ -41,7 +41,7 @@ input {
 }
 
 .rewards-form {
-    background-color: $color-green-light;
+    background-color: lighten($color-green-dark, 2.5%);
 }
 
 .todo-form {

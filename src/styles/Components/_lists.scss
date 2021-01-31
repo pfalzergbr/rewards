@@ -37,7 +37,7 @@
         }
 
         &--reward {
-            background-color: $color-green-light;
+            background-color: lighten($color-green-dark, 2.5%);
         
             @media (min-width: 600px) {
                 &:hover,
