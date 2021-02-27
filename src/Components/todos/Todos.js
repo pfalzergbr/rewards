@@ -12,7 +12,7 @@ import Footer from '../shared/Footer';
 
 // Renders the Todo Page
 
-const Todos = (props) => {
+const Todos = () => {
     const headerData = {
         name: 'todo-card',
         title: 'Todos...',

@@ -23,13 +23,15 @@
 
 }
 .coin-container {
+    width: 7.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
     
 }
 
 .coin-number {
-    margin-left: 1rem;
+    // margin-left: 1rem;
     font-size: $font-size-large;
 }
