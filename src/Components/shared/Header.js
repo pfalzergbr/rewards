@@ -59,7 +59,7 @@ const Header = (props) => {
                 />
               </svg>
             </span>
-            <span> x </span>
+            <span> &#215; </span>
             <span className='coin-number'>{coins.coins}</span>
           </div>
           <motion.button

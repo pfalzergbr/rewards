@@ -64,7 +64,8 @@ input {
 .input-wrapper {
     display: flex;
     align-items: center;
-    flex: 1;
+    height: 5rem;
+    // flex: 1;
     margin-bottom: 1em;
 
     @media (min-width: 600px){
