@@ -60,7 +60,7 @@ const RewardItem = (props) => {
                     pageTransition={itemTransition}
                     className={`list-item__wrapper list-item__wrapper--reward ${isClaiming && 'list-item__wrapper--claiming' }`}>
                     <div id={id} className='list-item__container'>
-                        <span className='coin'>
+                        <span className='coin coin--reward'>
                             <span>{rewardValue}</span>
                         </span>
                         <p className='list-item__item' onClick={setIsClaiming}>
