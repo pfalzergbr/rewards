@@ -20,6 +20,7 @@ input {
         text-align: center;
         width: 80%;
         flex: 1;
+        background-color: lighten($color-green-dark, 2.5%);
 
         @media (min-width: 600px) {
             flex: 1;
