@@ -18,7 +18,7 @@ input {
         padding: .5em 1em;
         color: #ecf0f1;
         text-align: center;
-        width: 80%;
+        width: 100%;
         flex: 1;
         background-color: lighten($color-green-dark, 2.5%);
 
@@ -64,7 +64,7 @@ input {
 .input-wrapper {
     display: flex;
     align-items: center;
-    // flex: 1;
+    flex: 1;
     margin-bottom: 1em;
 
     @media (min-width: 600px){
@@ -91,6 +91,12 @@ input {
     margin-right: 1em;
     // margin-bottom: 2rem;
     
+
+    // &__container {
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+
     & > i {
         display: inline-block;
         font-size: $font-size-small;

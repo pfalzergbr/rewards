@@ -1,21 +1,21 @@
 
 
 .coin {
-    font-size: $font-size-small;
+    // font-size: $font-size-small;
     display: flex;
     align-self: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: goldenrod;
-    border: 1px solid gold;
-    margin-right: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    // background-color: $color-white;
+    // border: 1px solid gold;
+    // margin-right: 2rem;
     border-radius: 50%;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    & > span {
-        color: black
+    & svg {
+        fill: $color-white;
     }
 }
 
